@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.line-through-custom {
+    text-decoration-line: line-through;
+    text-decoration-color: var(--tw-text-decoration-color);
+}
+  
+.text-decoration-red:hover {
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+    transform: rotate(-45deg);
+} 
