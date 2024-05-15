@@ -16,8 +16,8 @@
                     <img src="{{ asset('assets/logo/logo.png') }}" alt="logo" class="w-20 h-20 sm:w-24 sm:h-24">
                 </a>
             </div>
-            <ul class="flex items-center space-x-4 border border-y-white border-x-black">
-                <li class="p-5 text-decoration-red"><a href="/" class="text-white">Home</a></li>
+            <ul class="flex items-center  border border-y-white border-x-black">
+                <li class="p-5 text-decoration-red hidden md:block"><a href="/" class="text-white">Home</a></li>
                 <li class="p-5 text-decoration-red"><a href="/sneakers" class="text-white">Sneakers</a></li>
             </ul>
             <div class="flex gap-3 items-center">
