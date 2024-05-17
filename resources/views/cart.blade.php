@@ -16,7 +16,7 @@
                         $total += $details['price'] * $details['quantity'];
                         $sizeValue = isset($sizes[$details['size_id']]) ? $sizes[$details['size_id']]->size_value : 'N/A';
                     @endphp
-                    <div class="flex items-center bg-black text-white p-4 border rounded-lg shadow-md">
+                    <div class="flex items-center bg-black text-white p-4 border-b rounded-lg shadow-md">
                         <img src="{{ asset($details['image']) }}" alt="{{ $details['name'] }}" class="h-24 w-auto rounded-lg mr-4">
                         <div class="flex flex-col justify-between w-full">
                             <div class="flex justify-between items-center">

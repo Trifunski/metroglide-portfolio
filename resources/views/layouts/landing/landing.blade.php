@@ -22,14 +22,14 @@
             </ul>
             <div class="flex gap-3 items-center">
 
-                @if (Auth::check())
+                @auth
                     <form action="/logout" method="POST">
                         @csrf
                         <button type="submit" class="bg-white font-semibold text-black px-4 py-2 rounded-md hover:bg-black hover:text-white hover:ring hover:ring-white transition duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2">Logout</button>
                     </form>
                 @else
                     <a href="/login"><button class="bg-white font-semibold text-black px-4 py-2 rounded-md hover:bg-black hover:text-white hover:ring hover:ring-white transition duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2">Login</button></a>
-                @endif
+                @endauth
 
                 <a href="/cart">
                     <div class="relative" style="display: inline-block;">
